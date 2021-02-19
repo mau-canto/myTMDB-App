@@ -26,6 +26,11 @@ struct MovieSearchView: View {
                         NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
                             VStack(alignment: .leading) {
                                 Text(movie.title)
+									.bold()
+									.underline()
+								//Divider()
+								Text(movie.overview)
+									.lineLimit(2)
                                 Text(movie.yearText)
                             }
                         }

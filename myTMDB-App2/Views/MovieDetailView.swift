@@ -49,7 +49,7 @@ struct MovieDetailListView: View {
             }
             
             Text(movie.overview)
-            HStack {
+           /* HStack {
                 if !movie.ratingText.isEmpty {
                     Text(movie.ratingText).foregroundColor(.yellow)
                 }
@@ -101,7 +101,8 @@ struct MovieDetailListView: View {
             }
             
             Divider()
-            
+			*/
+			
             if movie.youtubeTrailers != nil && movie.youtubeTrailers!.count > 0 {
                 Text("Trailers").font(.headline)
                 

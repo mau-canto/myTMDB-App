@@ -28,6 +28,12 @@ struct MovieBackdropCard: View {
             .shadow(radius: 4)
             
             Text(movie.title)
+				.bold()
+				.underline()
+			Divider()
+			Text(movie.overview)
+				.lineLimit(2)
+			
         }
         .lineLimit(1)
         .onAppear {
